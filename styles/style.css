@@ -1,3 +1,13 @@
+```css
+/* ==========================================================================
+   TRANSITIONS ENTRE LES PAGES
+   ========================================================================== */
+
+@view-transition {
+    navigation: auto;
+}
+
+
 /* ==========================================================================
    1. POLICES LOCALES (@font-face)
    ========================================================================== */
@@ -24,6 +34,22 @@ html {
    3. STRUCTURE GÉNÉRALE DE LA PAGE
    ========================================================================== */
 
+/* --- CORPS DE LA PAGE (Body) --- */
+
+body {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    background-image: url('../assets/images/fond.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* --- CONTENU PRINCIPAL (Main) --- */
+
 main {
     flex: 1;
 }
@@ -33,29 +59,61 @@ main {
    4. COMPOSANTS COMMUNS
    ========================================================================== */
 
+/* --- CARTES --- */
+
+header,
+nav,
+footer,
+main section,
+main article {
+    background-color: #FFFFFFAA;
+    border-radius: 2rem;
+    padding: 1rem;
+    backdrop-filter: blur(1rem);
+}
+
+
+/* --- CARTES CENTRÉES --- */
+
+header,
+footer,
+main section,
+main article {
+    margin: 2rem;
+    text-align: center;
+}
+
+
 /* --- EN-TÊTE (Header) --- */
 
 header h1 {
     font-size: 2.25rem;
-    text-align: center;
 }
 
 
 /* --- MENU DE NAVIGATION (Nav) --- */
 
-nav {
-    padding: 1rem;
-}
-
 nav ul {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     list-style: none;
 }
 
+nav li {
+    background-color: #FCEEFAAA;
+    border-radius: 2rem;
+}
+
+nav li:hover {
+    background-color: #ECEEFAAA;
+}
+
 nav a {
+    display: block;
+    padding: 1rem;
     font-size: 1rem;
+    text-decoration: none;
 }
 
 
@@ -70,19 +128,6 @@ footer p {
    5. CONTENU PRINCIPAL
    ========================================================================== */
 
-/* --- BOÎTES DE CONTENU --- */
-
-header,
-main section,
-main article {
-    background-color: #FFFFFFCC;
-    margin: 2rem;
-    text-align: center;
-    border-radius: 2rem;
-    padding: 1rem;
-}
-
-
 /* --- GROUPES D'ARTICLES --- */
 
 main > section > div {
@@ -96,47 +141,34 @@ main > section > div > article {
 }
 
 
+/* --- IMAGES --- */
+
+main img {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+
 /* --- TYPOGRAPHIE --- */
 
 main h2 {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
 }
 
 main p {
     font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 
 /* ==========================================================================
    6. TABLEAUX
    ========================================================================== */
+```
 
-main table {
-
-}
-
-main caption {
-
-}
-
-main th {
-
-}
-
-main td {
-
-}
-
-
-/* ==========================================================================
-   7. PAGES AVEC IMAGE DE FOND
-   ========================================================================== */
-
-body {
-    background-image: url('../assets/images/fond.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border-radius: 2rem;
-}
