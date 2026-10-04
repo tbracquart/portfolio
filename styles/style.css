@@ -73,7 +73,6 @@ footer p {
 /* --- BOÎTES DE CONTENU --- */
 
 header,
-nav,
 main section,
 main article {
     background-color: #FFFFFFCC;
@@ -133,34 +132,8 @@ main td {
    7. PAGES AVEC IMAGE DE FOND
    ========================================================================== */
 
-/* --- PAGE D'ACCUEIL --- */
-
-body.photo-lycee {
-    background-image: url('../assets/images/lycee.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border-radius: 2rem;
-}
-
-
-/* --- PAGE DE PRÉSENTATION --- */
-
-body.fond {
+body {
     background-image: url('../assets/images/fond.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border-radius: 2rem;
-}
-
-
-/* --- PAGE DE PROJETS --- */
-
-body.matrix {
-    background-image: url('../assets/images/clavier.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
