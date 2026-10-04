@@ -1,0 +1,138 @@
+/* ==========================================================================
+   1. TABLETTES ET PETITS ÉCRANS
+   ========================================================================== */
+
+@media (max-width: 768px) {
+
+    /* --- EN-TÊTE --- */
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+
+    /* --- MENU DE NAVIGATION --- */
+
+    nav {
+        padding: 0.75rem;
+    }
+
+    nav ul {
+        gap: 1.5rem;
+    }
+
+
+    /* --- CONTENU PRINCIPAL --- */
+
+    main section,
+    main article {
+        margin: 1rem;
+        padding: 0.75rem;
+    }
+
+    main h2 {
+        font-size: 1.4rem;
+    }
+
+    main p {
+        font-size: 0.95rem;
+    }
+
+
+    /* --- GROUPES D'ARTICLES --- */
+
+    main > section > div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* --- TABLEAUX --- */
+
+    main table {
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+
+    /* --- IMAGES DE FOND --- */
+
+    main.photo-lycee,
+    main.fond,
+    main.matrix {
+        background-attachment: scroll;
+    }
+}
+
+
+/* ==========================================================================
+   2. TÉLÉPHONES
+   ========================================================================== */
+
+@media (max-width: 480px) {
+
+    /* --- EN-TÊTE --- */
+
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+
+    /* --- MENU DE NAVIGATION --- */
+
+    nav {
+        padding: 0.5rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+    }
+
+
+    /* --- CONTENU PRINCIPAL --- */
+
+    main section,
+    main article {
+        margin: 0.75rem;
+        padding: 0.75rem;
+        border-radius: 6px;
+    }
+
+    main h2 {
+        font-size: 1.3rem;
+    }
+
+    main h3 {
+        font-size: 1.1rem;
+    }
+
+    main p {
+        font-size: 0.9rem;
+    }
+
+
+    /* --- GROUPES D'ARTICLES --- */
+
+    main > section > div {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* --- TABLEAUX --- */
+
+    main th,
+    main td {
+        padding: 0.4rem;
+    }
+
+
+    /* --- PIED DE PAGE --- */
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
