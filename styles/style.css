@@ -72,14 +72,9 @@ footer p {
 
 /* --- BOÎTES DE CONTENU --- */
 
-main section {
-    background-color: #FFFFFFCC;
-    margin: 2rem;
-    text-align: center;
-    border-radius: 2rem;
-    padding: 1rem;
-}
-
+header,
+nav,
+main section,
 main article {
     background-color: #FFFFFFCC;
     margin: 2rem;
@@ -140,38 +135,35 @@ main td {
 
 /* --- PAGE D'ACCUEIL --- */
 
-main.photo-lycee {
+body.photo-lycee {
     background-image: url('../assets/images/lycee.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     border-radius: 2rem;
-    overflow: hidden;
 }
 
 
 /* --- PAGE DE PRÉSENTATION --- */
 
-main.fond {
+body.fond {
     background-image: url('../assets/images/fond.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     border-radius: 2rem;
-    overflow: hidden;
 }
 
 
 /* --- PAGE DE PROJETS --- */
 
-main.matrix {
+body.matrix {
     background-image: url('../assets/images/clavier.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     border-radius: 2rem;
-    overflow: hidden;
 }
