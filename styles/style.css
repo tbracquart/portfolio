@@ -147,6 +147,7 @@ main.photo-lycee {
     background-repeat: no-repeat;
     background-attachment: fixed;
     border-radius: 2rem;
+    overflow: hidden;
 }
 
 
@@ -159,6 +160,7 @@ main.fond {
     background-repeat: no-repeat;
     background-attachment: fixed;
     border-radius: 2rem;
+    overflow: hidden;
 }
 
 
@@ -171,4 +173,5 @@ main.matrix {
     background-repeat: no-repeat;
     background-attachment: fixed;
     border-radius: 2rem;
+    overflow: hidden;
 }
